@@ -1,0 +1,15 @@
+Resources:
+    myVPC:
+      Type: AWS::EC2::VPC
+      Properties:
+        CidrBlock: 10.3.0.0/16
+        EnableDnsSupport: 'false'
+        EnableDnsHostnames: 'false'
+        InstanceTenancy: default
+        Tags:
+         - Key: Creator
+           Value: cf1
+         - Key: Category
+           Value: ABM
+         - Key: Name
+           Value: CFNVPC
